@@ -1,0 +1,23 @@
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    border: solid .1em;
+}
+
+.navbar * {
+    margin: 1em auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    border: solid .1em;
+    position: fixed;
+    bottom: 0;
+}
+.footer * {
+    margin: 1em auto;
+    display: block;
+}
