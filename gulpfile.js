@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var bs = require('browser-sync');
 
 var src = './app/scss/**/*.+(scss|sass)';
-var htmlSrc = './app/*.html';
+var htmlSrc = './app/**/*.html';
 var imgSrc = './app/imgs/*';
 
 
@@ -15,7 +15,7 @@ const styles = () =>
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./build/css/'));
 
-const imgs = () => 
+const imgs = () =>
   gulp
     .src(imgSrc)
     .pipe(gulp.dest('./build/imgs/'));
@@ -38,7 +38,7 @@ const refresh = () => {
   gulp.watch(imgSrc, imgs).on('change', bs.reload);
 }
 
-const build = gulp.series(gulp.parallel(styles, imgs));
+const build = gulp.series(gulp.parallel(styles, imgs, html));
 
 const watch = gulp.series(build, refresh);
 
