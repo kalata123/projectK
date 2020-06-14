@@ -54,13 +54,40 @@ body {
 
 
 .main {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+
 
     .main-sidebar {
-        padding: 50px;
+        background-color: #f5f8fa;
+        max-width: 570px;
+        ul {
+            font-size: 20px;
+            list-style-type: none;
+            padding: 0;
+            margin: 15px 30px;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color:  #0a49cf;
+                padding-top: 20px;
+            }
+        }
     }
     
     .main-content {
-        margin-right: auto;
+        padding: 30px 60px ;
+
+        * {
+            max-width: 1200px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
     }
 }
 
