@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+}
+
+html, body {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+    & .bigger {
+        font-size: 25px!important;
+    }
+
+    & .top-m {
+        margin-top: 30px!important;
+    }
+
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #1a63ff;
+    justify-content: space-around;
+    & a {
+        padding: 1.5em 2em;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 1.5px 1px rgba(134, 133, 133, 0.7);
+        color: white;
+    }
+    
+    .navbar-buttons {
+        display: flex;
+        
+        * {
+            
+            border: none;
+        }
+    }
+}
+
+
+
+.main {
+    
+    flex: 1 1 auto;
+    align-self: flex-start;
+
+    .main-intro {
+        display: flex;
+        flex-direction: column;
+        margin: 70px;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        .intro-imgs {
+            display: flex;
+            flex-direction: row;
+            width: 1000px;
+            justify-content: center;
+
+            .main-photo { 
+                max-width: 230px;
+                height: auto;
+                object-fit: contain;
+                margin: 0 50px;
+            }
+        }
+        
+        .intro-text {
+            font-size: 20px;
+            max-width: 1000px;
+            margin-top: 100px;
+            // text-align: center;
+            .text-content {
+                margin: 0;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+
+                li {
+                    margin: 0;    
+                }
+
+                .top {
+                    margin-top: 10px;
+                }
+            }
+
+            ul li::before {
+                content: "\2022";
+                color: #00bacf;
+                display: inline-block;
+                width: 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .main-demo {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        // padding: 90px 0;
+        font-size: 20px;
+        background: linear-gradient(to right, #00bacf, #1a63ff);
+        padding: 70px 200px;
+        // align-items: center;;
+        .demo-text {
+
+            // text-align: center;
+            color: white;
+            margin-right: 100px;
+            margin-left: 100px;
+            
+            .shadow {
+                text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+            }
+
+            .text-content {
+                span {
+                    font-weight: bold;
+                    text-shadow: none;
+                }
+
+                span:nth-child(1){
+                    color: black;
+                }
+                span:nth-child(2){
+                    color: goldenrod;
+                }
+                span:nth-child(3){
+                    color: cyan;
+                }
+                span:nth-child(4){
+                    color: rgb(253, 93, 93);
+                }
+                
+            }
+        }
+
+        .demo-photo {
+            margin-left: 50px;
+            max-width: 400px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .main-detailed {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 100px;
+
+        .detailed-text {
+            font-size: 20px;
+            margin: 30px 0 0 0 ;
+            line-height: 1.5;
+            text-align: center;
+            
+            
+        }
+    }
+
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:  #1a63ff;
+    padding: 30px;
+
+    & a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer-links {
+
+        a {
+            justify-content: space-between;
+            padding: 5px;
+            margin: 5px;
+        }
+
+    }
+}
