@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+}
+
+html, body {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+    & .bigger {
+        font-size: 24px!important;
+    }
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    border: .01em solid;
+
+    justify-content: space-between;
+
+    & a {
+        padding: 1.5em 2em;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #00bacf;
+    }
+    
+    .navbar-buttons {
+        display: flex;
+        
+        * {
+            
+            border: none;
+        }
+    }
+}
+
+
+
+.main {
+    
+    flex: 1 1 auto;
+    align-self: flex-start;
+
+    .main-intro {
+        display: flex;
+        flex-direction: row;
+        margin: 90px 70px;
+        justify-content: space-evenly;
+        .main-photo { 
+            max-width: 230px;
+            height: auto;
+            object-fit: contain;
+            
+        }
+        
+        .intro-text {
+            font-size: 18px;
+            max-width: 700px;
+
+            .text-content {
+                margin: 0;
+            }
+
+            .top-m {
+                margin-top: 30px;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+
+                li {
+                    margin: 0;    
+                }
+
+                .top {
+                    margin-top: 10px;
+                }
+            }
+
+            ul li::before {
+                content: "\2022";
+                color: #00bacf;
+                display: inline-block;
+                width: 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .main-demo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 90px 0;
+        font-size: 18px;
+        .demo-stats {
+            text-align: center;
+
+            .year {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .main-detailed {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 100px;
+        // width: 100%;
+        .detailed-text {
+            margin: 30px 0 0 0 ;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+            
+            
+        }
+    }
+
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    border: .01em solid;
+    width: 100%;
+
+    * {
+        margin: 1em auto;
+    }
+}

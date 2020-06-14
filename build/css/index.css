@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
+  body .bigger {
+    font-size: 24px !important; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  border: .01em solid;
+  justify-content: space-between; }
+  .navbar a {
+    padding: 1.5em 2em;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00bacf; }
+  .navbar .navbar-buttons {
+    display: flex; }
+    .navbar .navbar-buttons * {
+      border: none; }
+
+.main {
+  flex: 1 1 auto;
+  align-self: flex-start; }
+  .main .main-intro {
+    display: flex;
+    flex-direction: row;
+    margin: 90px 70px;
+    justify-content: space-evenly; }
+    .main .main-intro .main-photo {
+      max-width: 230px;
+      height: auto;
+      object-fit: contain; }
+    .main .main-intro .intro-text {
+      font-size: 18px;
+      max-width: 700px; }
+      .main .main-intro .intro-text .text-content {
+        margin: 0; }
+      .main .main-intro .intro-text .top-m {
+        margin-top: 30px; }
+      .main .main-intro .intro-text ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0; }
+        .main .main-intro .intro-text ul li {
+          margin: 0; }
+        .main .main-intro .intro-text ul .top {
+          margin-top: 10px; }
+      .main .main-intro .intro-text ul li::before {
+        content: "\2022";
+        color: #00bacf;
+        display: inline-block;
+        width: 10px;
+        margin-right: 5px; }
+  .main .main-demo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 90px 0;
+    font-size: 18px; }
+    .main .main-demo .demo-stats {
+      text-align: center; }
+      .main .main-demo .demo-stats .year {
+        font-weight: bold; }
+  .main .main-detailed {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 100px; }
+    .main .main-detailed .detailed-text {
+      margin: 30px 0 0 0;
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  border: .01em solid;
+  width: 100%; }
+  .footer * {
+    margin: 1em auto; }
