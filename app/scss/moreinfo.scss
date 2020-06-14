@@ -54,109 +54,14 @@ body {
 
 
 .main {
-    
-    flex: 1 1 auto;
-    // align-self: flex-start;
 
-    .main-intro {
-        display: flex;
-        flex-direction: row;
-        margin: 90px 70px;
-        align-items: center;
-        justify-content: space-evenly;
-        
-        .intro-text {
-            font-size: 20px;
-            margin: 40px;
-            text-align: center;
-         
-            .intro-photo {
-                max-width: 100px;
-                height: auto;
-                object-fit: contain;
-            }
-
-            .text-content {
-                margin: 0;
-            }
-        }
+    .main-sidebar {
+        margin-right: auto;
     }
     
-    .main-demo {
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-        background: linear-gradient(to right, #00bacf, #1a63ff);
-        padding: 50px 500px;
-        color: white;
-
-        & .button {
-
-            border: none;
-            color:white;
-            background-color:  #1a63ff;
-            text-align: center;
-            text-decoration: none;
-            font-size: 20px;
-            padding: 20px;
-            cursor: pointer;
-        }
-
-        .demo-subscribe {
-            margin: 10px;   
-        }
-
-        .demo-intro {
-            margin: 0;
-        }
-
-        .demo-feedback {
-            display: flex;
-            flex-direction: column;
-
-            .feedback-divs {
-                margin-top: 10px;
-
-                input[type=text], select {
-                    width: 100%;
-                    border: none;
-                    font-size: 20px; 
-                    padding: 20px 20px;
-                    display: inline-block;
-                    margin: 8px 0;
-                }
-
-                input::placeholder {
-                    font-size: 24px;
-                }
-            }
-
-            .feedback-submits {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 15px;
-            }
-
-        }
+    .main-content {
+        margin-right: auto;
     }
-
-    .main-detailed {
-        display: flex;
-        flex-direction: column;
-        margin: 70px 100px;
-
-        .detailed-text {
-            font-size: 20px;
-            margin: 30px 0 0 0 ;
-            line-height: 1.5;
-            text-align: center;
-            
-            
-        }
-    }
-
-}
 
 
 
